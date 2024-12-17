@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-            .allowedOrigins("http://localhost:3000", "https://lims-nmis.vercel.app/")
+            .allowedOrigins("http://localhost:3000", "https://nmis.vercel.app/")
             .allowedMethods("GET", "POST", "PUT", "DELETE")
             .allowCredentials(true); // If you need to include cookies in the request
     }
